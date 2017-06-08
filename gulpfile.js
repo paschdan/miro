@@ -95,7 +95,7 @@ gulp.task('publish', function() {
   var publisher = awspublish.create({
     region: 'eu-central-1',
     params: {
-      Bucket: 'paschdan-miro'
+      Bucket: 'miro.paschdan.de'
     }
   }, {
     cacheFileName: 'aws.cache'
