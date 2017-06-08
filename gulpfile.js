@@ -6,11 +6,6 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
-var s3Config = {
-  bucket: 'paschdan-miro',
-  region: 'eu-central-1'
-}
-var s3 = require('gulp-s3');
 var awspublish = require('gulp-awspublish');
 
 // Set the banner content
