@@ -12,7 +12,7 @@ phases:
 artifacts:
   files:
     - css/creative.min.css
-    - img/**
+    - img/**/*
     - js/creative.min.js
     - vendor/**
     - index.html
