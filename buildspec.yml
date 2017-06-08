@@ -8,11 +8,4 @@ phases:
   build:
     commands:
       - npm run build
-
-artifacts:
-  files:
-    - css/creative.min.css
-    - img/**/*
-    - js/creative.min.js
-    - vendor/**
-    - index.html
+      - npm run publish
