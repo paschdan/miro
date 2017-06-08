@@ -2,3 +2,4 @@
 vendor
 css
 **/*.min.*
+node_modules
