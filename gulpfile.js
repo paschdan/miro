@@ -114,11 +114,10 @@ gulp.task('publish', function() {
     'img/**/*',
     'vendor/**/*'
   ], { "base" : "." })
-    .pipe(rename(function (path) {
-      // This is weird, but is needed to make the file use the relative path...
-    }))
     // publisher will add Content-Length, Content-Type and headers specified above
     // If not specified it will set x-amz-acl to public-read by default
+    .pipe(awspublish.gzip())
+
     .pipe(publisher.publish(headers))
 
     // create a cache file to speed up consecutive uploads
