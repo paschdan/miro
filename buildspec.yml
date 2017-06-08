@@ -1,0 +1,18 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - printenv
+      - npm install
+  build:
+    commands:
+      - npm run build
+
+artifacts:
+  files:
+    - css/creative.min.css
+    - img/**
+    - js/creative.min.js
+    - vendor/**
+    - index.html
