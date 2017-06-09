@@ -9,6 +9,15 @@
         }, 1250, 'easeInOutExpo');
     });
 
+    $(document).on('click', 'a.page-scroll-top', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: ($($anchor.attr('href')).offset().top - 50)
+      }, 1250, 'easeInOutExpo');
+      event.preventDefault();
+      history.replaceState({}, document.title, ".")
+    });
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
